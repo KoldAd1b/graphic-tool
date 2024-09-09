@@ -1,0 +1,34 @@
+{
+  "version": "7",
+  "dialect": "postgresql",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "7",
+      "when": 1723759037305,
+      "tag": "0000_thankful_squadron_supreme",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1723767879039,
+      "tag": "0001_tense_valeria_richards",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1723900987759,
+      "tag": "0002_zippy_captain_universe",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "7",
+      "when": 1724192166965,
+      "tag": "0003_solid_zuras",
+      "breakpoints": true
+    }
+  ]
+}
