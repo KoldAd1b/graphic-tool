@@ -27,12 +27,6 @@ type Props = {
 };
 
 const Toolbar = ({ onChangeActiveTool, editor, activeTool }: Props) => {
-  if (editor?.selectedObjects.length === 0) {
-    return (
-      <div className="shrink-0 h-[56px] border-b bg-white w-full flex items-center overflow-x-auto z-[49] p-2 gap-x-2" />
-    );
-  }
-
   const initialFillColor = editor?.getActiveFillColor();
   const initialStrokeColor = editor?.getActiveStrokeColor();
   const initialFontFamily = editor?.getActiveFontFamily();
@@ -55,6 +49,12 @@ const Toolbar = ({ onChangeActiveTool, editor, activeTool }: Props) => {
     textAlign: initialTextAlign,
     fontSize: initialFontSize,
   });
+  if (editor?.selectedObjects.length === 0) {
+    return (
+      <div className="shrink-0 h-[56px] border-b bg-white w-full flex items-center overflow-x-auto z-[49] p-2 gap-x-2" />
+    );
+  }
+
   const selectedObjectType = editor?.selectedObjects[0].type;
 
   const isSelectText = isTextType(selectedObjectType);
