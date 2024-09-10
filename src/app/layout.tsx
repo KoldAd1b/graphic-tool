@@ -6,6 +6,7 @@ import { Toaster } from "sonner";
 import { auth } from "@/auth";
 import { SessionProvider } from "next-auth/react";
 import { Modals } from "@/components/modals";
+import { SubscriptionAlert } from "@/features/subscriptions/components/subscrption-alert";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -28,6 +29,7 @@ export default async function RootLayout({
           <Providers>
             <Modals />
             <Toaster />
+            <SubscriptionAlert />
             {children}
           </Providers>
         </body>

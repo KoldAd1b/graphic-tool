@@ -43,7 +43,6 @@ const UserButton = () => {
         {!shouldBlock && !isLoading && (
           <div className="absolute -top-1 -left-1 z-10 flex items-center justify-centerpa">
             <div className="rounded-full bg-white flex items-center justify-center p-1 drop-shadow-sm">
-              {" "}
               <Crown className="size-3 text-yellow-500 fill-yellow-500 " />
             </div>
           </div>

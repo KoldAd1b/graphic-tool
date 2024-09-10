@@ -1,36 +1,66 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Graphic Design Editor
 
-## Getting Started
+A powerful, browser-based **Graphic Design Editor** built with **TypeScript** and **SQL** for intuitive graphic creation and manipulation. This editor allows users to create, edit, and save graphic designs with a smooth, user-friendly interface.
 
-First, run the development server:
+## Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **Customizable Canvas**: Resize and customize your canvas with ease.
+- **Shape and Text Tools**: Add and edit shapes, text, and images.
+- **Layer Management**: Intuitive layer system for precise design control.
+- **Save and Load Designs**: Save your work to a database and reload it anytime.
+- **Export Designs**: Export your designs to popular formats like PNG, JPG, or SVG.
+- **Undo/Redo System**: Effortlessly undo and redo actions to improve your workflow.
+- **SQL Backend**: Store user data and designs in a robust postgres database.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Tech Stack
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Backend**: NextJS
+- **Database**: SQL (Neon-Postgres)
+- **Authentication**: Auth-js
+- **Hosting**: Deployed on Vercel
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Installation
 
-## Learn More
+1. Clone the repository:
 
-To learn more about Next.js, take a look at the following resources:
+   ```bash
+   git clone https://github.com/KoldAd1b/graphic-tool.git
+   ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+2. Navigate to the project directory:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+   ```bash
+   cd graphic-tool
+   ```
 
-## Deploy on Vercel
+3. Install dependencies:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+   ```bash
+   npm install
+   ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+4. Set up the database:
+
+   - Create a SQL database (e.g., PostgreSQL).
+   - Run the SQL migration files located in the `db/schema` directory to set up the necessary tables.
+
+5. Set up environment variables:
+
+   Create a `.env` file in the root directory with the configurations available the example.env file
+
+6. Start the application:
+
+   ```bash
+   npm run dev
+   ```
+
+## Deployment
+
+Application deployed on : `https://graphic-tool.vercel.app`
+
+## Usage
+
+1. Open your browser and navigate to `http://localhost:your-port`.
+2. Create an account or log in.
+3. Start designing by selecting tools from the toolbar.
+4. Save your work to the database and export your designs!

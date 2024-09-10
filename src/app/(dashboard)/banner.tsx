@@ -21,7 +21,6 @@ const Banner = () => {
       },
       {
         onSuccess: ({ data }) => {
-          console.log(data);
           router.push(`/editor/${data[0].id}`);
         },
       }

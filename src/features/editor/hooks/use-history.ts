@@ -36,7 +36,7 @@ const useHistory = ({ canvas, saveCallback }: Props) => {
 
         setHistoryIndex(canvasHistory.current.length - 1);
       }
-      // TODO save callback
+      //save callback
 
       const workspace = canvas
         .getObjects()
@@ -49,6 +49,7 @@ const useHistory = ({ canvas, saveCallback }: Props) => {
     },
     [canvas, saveCallback]
   );
+
   const undo = useCallback(() => {
     if (canUndo()) {
       skipSave.current = true;
