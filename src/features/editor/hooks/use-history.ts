@@ -1,5 +1,6 @@
 import React, { useCallback, useRef, useState } from "react";
 import { fabric } from "fabric";
+import { JSON_KEYS } from "../types";
 
 type Props = {
   canvas: fabric.Canvas | null;
@@ -27,8 +28,8 @@ const useHistory = ({ canvas, saveCallback }: Props) => {
   const save = useCallback(
     (skip = false) => {
       if (!canvas) return;
-      const currenState = canvas.toJSON();
-      const json = JSON.stringify(currenState);
+      const currentState = canvas.toJSON(JSON_KEYS);
+      const json = JSON.stringify(currentState);
 
       if (!skip && !skipSave.current) {
         canvasHistory.current.push(json);
