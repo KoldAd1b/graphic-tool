@@ -25,14 +25,15 @@ const Sidebar = ({ activeTool, onChangeActiveTool }: Props) => {
     <aside className="bg-white flex flex-col w-[100px] h-full border-r overflow-y-auto">
       <ul className="flex flex-col ">
         {/* // Do not pass the icon as <Icon />. */}
-        <SidebarItem
+        {/* To be implemented later */}
+        {/* <SidebarItem
           icon={LayoutTemplate}
           label="Design"
           isActive={activeTool === "templates"}
           onClick={() => {
             onChangeActiveTool("templates");
           }}
-        />
+        /> */}
         <SidebarItem
           icon={ImageIcon}
           label="Image"

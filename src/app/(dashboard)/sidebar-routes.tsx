@@ -71,7 +71,7 @@ const SidebarRoutes = () => {
           }}
         />
         <SidebarItem
-          href={`mailto:support@canvajs.com`}
+          href={`mailto:support@graphica.com`}
           icon={MessageCircleQuestion}
           label="Get help"
           onClick={() => {}}

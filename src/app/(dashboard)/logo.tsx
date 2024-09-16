@@ -14,9 +14,9 @@ const Logo = () => {
     <Link href={"/"}>
       <div className="flex items-center gap-x-2 hover:opacity-75 transition h-[68px] px-4">
         <div className="size-8 relative">
-          <Image src={"/company-logo.svg"} alt="CanvaJS" fill />
+          <Image src={"/company-logo.svg"} alt="Graphica" fill />
         </div>
-        <h1 className={cn(font.className, "text-xl font-bold")}>CanvaJS</h1>
+        <h1 className={cn(font.className, "text-xl font-bold")}>Graphica</h1>
       </div>
     </Link>
   );

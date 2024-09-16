@@ -35,7 +35,7 @@ const Banner = () => {
       </div>
       <div className="flex flex-col gap-y-2 ">
         <h1 className="text-xl md:text-3xl font-semibold">
-          Visualize your ideas with CanvaJS
+          Visualize your ideas with Graphica
         </h1>
         <p className="text-xs md:text-sm mb-2">
           Turn inspiration into designs within no time
